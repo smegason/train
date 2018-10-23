@@ -10,7 +10,8 @@ Train is being developed in the same spirit as Scratch from MIT but targeting a 
 Train was inspired while I was playing with my then 2 year old son Noah who naturally loved to build using his wooden train sets and wooden blocks with letters, animals, etc. I was inspired by his natural curiosity and tenacity in building and by the non-trivial logic that the resulting tracks could provide using simple primitives (such as lazy wyes). Coding was an important part of my childhood. I discovered many concepts in mathematics, logic, and even art by coding. Coding helped drive my interest in science and lead me to my current profession of a professor/scientist. I see coding as a basic skill that everyone can benefit from and perhaps the best way to engage kids from all backgrounds to pursue STEM career paths. Tablets, phones, and computers are much more ubiquitous, safe, and cheaper than e.g. a chemistry set or other apperatuses required for science experiments. But through coding, kids can learn to explore their curiosity, to build, create, and learn logic.
 
 PROGRAMMING GUIDE
-/www/js/train.js - this is the main javascript code file for Train
+
+www/js/train.js - this is the main javascript code file for Train
 
 Train can be run on the web just with the www/ folder.
 
