@@ -1,0 +1,55 @@
+<?xml version='1.1' encoding='utf-8'?>
+<widget id="org.train-hub" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Train - Code Visually</name>
+    <description>
+        Train is a completely visual programming language for 3-8 year olds.
+    </description>
+    <author email="megason@hms.harvard.edu" href="https://train-hub.org">
+        Sean Megason, Harvard University
+    </author>
+    <content src="trainIOS.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="landscape" />
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <splash src="www/splash/ios/Default@2x~universal~anyany.png" />
+        <icon height="20" src="www/res/Icon-App-20x20@1X.png" width="20" />
+        <icon height="40" src="www/res/Icon-App-20x20@2X.png" width="40" />
+        <icon height="60" src="www/res/Icon-App-20x20@3X.png" width="60" />
+        <icon height="29" src="www/res/Icon-App-29x29@1X.png" width="29" />
+        <icon height="58" src="www/res/Icon-App-29x29@2X.png" width="58" />
+        <icon height="87" src="www/res/Icon-App-29x29@3X.png" width="87" />
+        <icon height="40" src="www/res/Icon-App-40x40@1X.png" width="40" />
+        <icon height="80" src="www/res/Icon-App-40x40@2X.png" width="80" />
+        <icon height="120" src="www/res/Icon-App-40x40@3X.png" width="120" />
+        <icon height="57" src="www/res/Icon-App-57x57@1X.png" width="57" />
+        <icon height="114" src="www/res/Icon-App-57x57@2X.png" width="114" />
+        <icon height="60" src="www/res/Icon-App-60x60@1X.png" width="60" />
+        <icon height="120" src="www/res/Icon-App-60x60@2X.png" width="120" />
+        <icon height="180" src="www/res/Icon-App-60x60@3X.png" width="180" />
+        <icon height="72" src="www/res/Icon-App-72x72@1X.png" width="72" />
+        <icon height="144" src="www/res/Icon-App-72x72@2X.png" width="144" />
+        <icon height="76" src="www/res/Icon-App-76x76@1X.png" width="76" />
+        <icon height="152" src="www/res/Icon-App-76x76@2X.png" width="152" />
+        <icon height="228" src="www/res/Icon-App-76x76@3X.png" width="228" />
+        <icon height="167" src="www/res/Icon-App-83.5x83.5@2X.png" width="167" />
+        <icon height="50" src="www/res/Icon-Small-50x50@1X.png" width="50" />
+        <icon height="100" src="www/res/Icon-Small-50x50@2X.png" width="100" />
+        <icon height="48" src="www/res/icon-48.png" width="48" />
+        <icon height="55" src="www/res/icon-55.png" width="55" />
+        <icon height="88" src="www/res/icon-88.png" width="88" />
+        <icon height="172" src="www/res/icon-172.png" width="172" />
+        <icon height="196" src="www/res/icon-196.png" width="196" />
+        <icon height="1024" src="www/res/icon-1024-nontransparent.png" width="1024" />
+    </platform>
+    <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
+    <engine name="ios" spec="^4.5.5" />
+</widget>
