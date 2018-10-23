@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+Cache-Control:public;
+>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127754469-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127754469-1');
+        </script>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Train</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        	<link rel="apple-touch-startup-image" href="img/startup.png" />
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+
+    <body ontouchmove="BlockMove(event);">
+        <script>
+	 		function BlockMove(event) {
+	  		// Tell Safari not to move the window.
+	  			event.preventDefault() ;
+	 		}
+        </script>
+        	
+		<iframe src='trainWeb.html?iconscale=2' width='1000' height='750' frameBorder='0' id='trainframeid' scrolling='no' name="trainframe"></iframe>
+<!--		<iframe src='browse.php' width='1000' height='0' frameBorder='0' id='browseframeid' scrolling='yes' name="browseframe"> </iframe> -->
+<!--            <iframe src='browse.php' width='0' height='0' frameBorder='0'> </iframe> -->
+        <iframe src='browse.php' height='0' width='0' frameBorder='0'></iframe>
+
+        <script type="text/javascript"> //allows passed params to go from index.html to train.html
+            var loc = window.location.toString();
+            var params = loc.split('?')[1];
+            var iframe = document.getElementById('trainframeid');
+            iframe.src = iframe.src + '&' + params;
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+Cache-Control:public;
+>
+<!-- Purpose: the point of this page is to serve inside an iframe for showing a train -->
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+       <meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, viewport-fit=cover" />
+        <link rel="stylesheet" href="css/main.css">
+	  </head>
+
+    <body ontouchmove="BlockMove(event);">
+        <script>
+					function BlockMove(event) {
+						// Tell Safari not to move the window.
+							event.preventDefault() ;
+					}
+				</script>
+		
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/train.js" type="text/javascript"></script>
+
+     		<div id="container"; width:300px; height:225px;>
+            <canvas id="canvas" width="300" height="225" ></canvas>
+        </div>
+
+		<!-- Dialog box for new user -->
+		<div id="dialog-newUser" title="Create new user" style="display: none;" width:0px height:0px>
+		  <p class="validateTips"> </p>
+		 
+		  <form>
+		    <fieldset>
+		      <label for="name">Username</label>
+		      <input type="text" name="username" id="username" value="" class="text ui-widget-content ui-corner-all">
+		      <label for="password">Password</label>
+		      <input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all">
+		      <label for="email">Email</label>
+		      <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all">
+		 
+		      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+		    </fieldset>
+		  </form>
+		</div>
+		 
+		<!-- Dialog box for forgot password -->
+		<div id="dialog-forgotPassword" title="Forgot password" style="display: none;" width:0px height:0px>
+		  <p class="validateTips"> </p>
+		 
+		  <form>
+		    <fieldset>
+		      <label for="email">Email</label>
+		      <input type="text" name="email" id="emailforgot" value="" class="text ui-widget-content ui-corner-all">
+		 
+		      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+		    </fieldset>
+		  </form>
+		</div>
+		 
+		<!-- Dialog box for signinUser -->
+		<div id="dialog-signinUser" title="Sign-in user" style="display: none;" width:0px height:0px>
+		  <p class="validateTips"> </p>
+		  <form>
+		    <fieldset>
+		      <label for="name">Username</label>
+		      <input type="text" name="username" id="usernameSignin" value="" class="text ui-widget-content ui-corner-all">
+		      <label for="password">Password</label>
+		      <input type="password" name="password" id="passwordSignin" value="" class="text ui-widget-content ui-corner-all">
+		 	  	<input type="button" value="New User" id="newuser" style="float: right;">
+		 	  <div id="newuserlink" style="color:#0000FF; float: right;">New User</div>
+		      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+		    </fieldset>
+		  </form>
+		</div>
+		 
+		<!-- Dialog box for browse tracks for download -->
+		<div id="dialog-downloadTrack" title="Download track" style="display: none;" width:0px height:0px>
+		  <p class="validateTips"> </p>
+		 
+		  <form>
+		    <fieldset>
+		      <label for="name">Username</label>
+		      <input type="text" name="username" id="usernamebrowse" value="" class="text ui-widget-content ui-corner-all">
+		 
+		      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+		    </fieldset>
+		  </form>
+		</div>
+		 
+		<!-- Dialog box for upload tracks -->
+		<div id="dialog-uploadTrack" title="Upload track" style="display: none;" width:0px height:0px>
+		  <p class="validateTips"> </p>
+		  <form>
+		  	Upload your current track to train-hub.org
+		    <fieldset>
+		      <label for="trackname">Track name</label>
+		      <input type="text" name="trackname" id="trackname" value="" class="text ui-widget-content ui-corner-all">
+		      <label for="trackdescription">Track description</label>
+		      <textarea name="trackdescription" id="trackdescription" value=" " class="text ui-widget-content ui-corner-all" cols="35" rows="6"></textarea>
+		      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+		    </fieldset>
+		  </form>
+		</div>
+
+    </body>
+</html>
