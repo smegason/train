@@ -11,10 +11,19 @@ Train was inspired while I was playing with my then 2 year old son Noah who natu
 
 PROGRAMMING GUIDE
 
-www/js/train.js - this is the main javascript code file for Train
+docs/js/train.js - this is the main javascript code file for Train
 
-Train can be run on the web just with the www/ folder.
+Train can be run on the web just with the `docs/` folder.
 
 The source files for the rendered images in train can be found in ImgSource/ and can be rendered with Blender
 
-Train can be wrapped in Cordova by installing Cordova and the Splashscreen plugin and then copying this www folder in place of the default one, and using this "config.xml" file.
+Train can be wrapped in Cordova by installing Cordova and the Splashscreen plugin, then copying the contents of `docs/` into the Cordova project's `www/` folder. Copy `config.xml` into that project and change its icon and splash-image paths from `docs/` to `www/` in the Cordova copy.
+
+
+GITHUB PAGES
+
+The `docs/` folder contains the static site and includes `.nojekyll` so GitHub Pages serves the files directly.
+
+After this change is merged into `master`, open the repository's **Settings > Pages**, choose **Deploy from a branch**, select **master** and **/docs**, and click **Save**. The site will be available at https://smegason.github.io/train/ once GitHub finishes deploying it.
+
+GitHub Pages does not execute PHP or apply Apache `.htaccess` rules. The static editor and local track storage can run there, but the existing PHP-backed account and shared-track features need a separate PHP server. Those endpoints are retained in `docs/php/` for deployments that support PHP.
