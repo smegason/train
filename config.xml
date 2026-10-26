@@ -20,35 +20,35 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-        <splash src="www/splash/ios/Default@2x~universal~anyany.png" />
-        <icon height="20" src="www/res/Icon-App-20x20@1X.png" width="20" />
-        <icon height="40" src="www/res/Icon-App-20x20@2X.png" width="40" />
-        <icon height="60" src="www/res/Icon-App-20x20@3X.png" width="60" />
-        <icon height="29" src="www/res/Icon-App-29x29@1X.png" width="29" />
-        <icon height="58" src="www/res/Icon-App-29x29@2X.png" width="58" />
-        <icon height="87" src="www/res/Icon-App-29x29@3X.png" width="87" />
-        <icon height="40" src="www/res/Icon-App-40x40@1X.png" width="40" />
-        <icon height="80" src="www/res/Icon-App-40x40@2X.png" width="80" />
-        <icon height="120" src="www/res/Icon-App-40x40@3X.png" width="120" />
-        <icon height="57" src="www/res/Icon-App-57x57@1X.png" width="57" />
-        <icon height="114" src="www/res/Icon-App-57x57@2X.png" width="114" />
-        <icon height="60" src="www/res/Icon-App-60x60@1X.png" width="60" />
-        <icon height="120" src="www/res/Icon-App-60x60@2X.png" width="120" />
-        <icon height="180" src="www/res/Icon-App-60x60@3X.png" width="180" />
-        <icon height="72" src="www/res/Icon-App-72x72@1X.png" width="72" />
-        <icon height="144" src="www/res/Icon-App-72x72@2X.png" width="144" />
-        <icon height="76" src="www/res/Icon-App-76x76@1X.png" width="76" />
-        <icon height="152" src="www/res/Icon-App-76x76@2X.png" width="152" />
-        <icon height="228" src="www/res/Icon-App-76x76@3X.png" width="228" />
-        <icon height="167" src="www/res/Icon-App-83.5x83.5@2X.png" width="167" />
-        <icon height="50" src="www/res/Icon-Small-50x50@1X.png" width="50" />
-        <icon height="100" src="www/res/Icon-Small-50x50@2X.png" width="100" />
-        <icon height="48" src="www/res/icon-48.png" width="48" />
-        <icon height="55" src="www/res/icon-55.png" width="55" />
-        <icon height="88" src="www/res/icon-88.png" width="88" />
-        <icon height="172" src="www/res/icon-172.png" width="172" />
-        <icon height="196" src="www/res/icon-196.png" width="196" />
-        <icon height="1024" src="www/res/icon-1024-nontransparent.png" width="1024" />
+        <splash src="docs/splash/ios/Default@2x~universal~anyany.png" />
+        <icon height="20" src="docs/res/Icon-App-20x20@1x.png" width="20" />
+        <icon height="40" src="docs/res/Icon-App-20x20@2x.png" width="40" />
+        <icon height="60" src="docs/res/Icon-App-20x20@3x.png" width="60" />
+        <icon height="29" src="docs/res/Icon-App-29x29@1x.png" width="29" />
+        <icon height="58" src="docs/res/Icon-App-29x29@2x.png" width="58" />
+        <icon height="87" src="docs/res/Icon-App-29x29@3x.png" width="87" />
+        <icon height="40" src="docs/res/Icon-App-40x40@1x.png" width="40" />
+        <icon height="80" src="docs/res/Icon-App-40x40@2x.png" width="80" />
+        <icon height="120" src="docs/res/Icon-App-40x40@3x.png" width="120" />
+        <icon height="57" src="docs/res/Icon-App-57x57@1x.png" width="57" />
+        <icon height="114" src="docs/res/Icon-App-57x57@2x.png" width="114" />
+        <icon height="60" src="docs/res/Icon-App-60x60@1x.png" width="60" />
+        <icon height="120" src="docs/res/Icon-App-60x60@2x.png" width="120" />
+        <icon height="180" src="docs/res/Icon-App-60x60@3x.png" width="180" />
+        <icon height="72" src="docs/res/Icon-App-72x72@1x.png" width="72" />
+        <icon height="144" src="docs/res/Icon-App-72x72@2x.png" width="144" />
+        <icon height="76" src="docs/res/Icon-App-76x76@1x.png" width="76" />
+        <icon height="152" src="docs/res/Icon-App-76x76@2x.png" width="152" />
+        <icon height="228" src="docs/res/Icon-App-76x76@3x.png" width="228" />
+        <icon height="167" src="docs/res/Icon-App-83.5x83.5@2x.png" width="167" />
+        <icon height="50" src="docs/res/Icon-Small-50x50@1x.png" width="50" />
+        <icon height="100" src="docs/res/Icon-Small-50x50@2x.png" width="100" />
+        <icon height="48" src="docs/res/icon-48.png" width="48" />
+        <icon height="55" src="docs/res/icon-55.png" width="55" />
+        <icon height="88" src="docs/res/icon-88.png" width="88" />
+        <icon height="172" src="docs/res/icon-172.png" width="172" />
+        <icon height="196" src="docs/res/icon-196.png" width="196" />
+        <icon height="1024" src="docs/res/icon-1024-nontransparent.png" width="1024" />
     </platform>
     <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
     <engine name="ios" spec="^4.5.5" />
